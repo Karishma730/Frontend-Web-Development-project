@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact PAGE</title>
+  <style>
+    
+
+    body {
+      font-family: "times new roman";
+      background: linear-gradient(to right, #e6f7ff, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #003366, #005580);
+      color: white;
+      padding: 25px 0;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 15px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    section p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      color: #004466;
+    }
+
+    form label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #3399cc;
+      outline: none;
+      background-color: #f0faff;
+    }
+
+    input[type="submit"] {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #005f99;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+      color: #444;
+      border-top: 3px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="newhome.html">Home</a> ||
+      <a href="newabout.html">About</a> ||
+      <a href="newcontact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p>Use the form below to contact us.</p>
+      <form method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email 📧:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone Number 📞:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="message">Message ✉️:</label>
+        <textarea id="message" rows="5" placeholder="Message ....."></textarea>required></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Simple HTML Website | Created by Karishma Ragipati
+  </footer>
+
+</body>
+</html>
+

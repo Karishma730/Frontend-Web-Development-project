@@ -1,0 +1,303 @@
+1st Assignment upto Semantic HTML
+
+SECTION A:
+
+1. a) Hyper Text Markup Language 
+2. b) <h1> 
+3. c) <br> 
+4. b) href 
+5. b) <a href="http://www.example.com">Example</a> 
+6. b) alt 
+7. b) <textarea> 
+8. c) <section> 
+9. a) To create navigation links 
+10. b) <article> 
+11. c) Content aside from main content (like sidebar) 
+12. d) <fieldset> 
+13. c) <!-- This is a comment -->
+14. b) <meter> 
+15. c) <span> is inline, <div> is block 
+
+SECTION B:
+
+16. <header>
+17. <footer>
+18. <figcaption>
+19. 3 inline internal external
+20. <tr>
+21. <iframe >
+22. <id>
+23. <class>
+24. <body>
+25. <head>
+
+SECTION C:
+
+26.true
+27.false
+28.true
+29.false
+30.true
+31.true
+32.true
+33.false
+34.false
+35.true
+ 
+SECTION D:
+
+36.semantic element gives mean/info of that particular tag to browser and developers. EG:<section>
+   Non-semantic elements not gives mean/info of that particular tag to browser and developers. EG:<div>
+
+37.<section>:divide page as sections 
+   <header>:gives header to that page on top
+   <footer>:used at bottom for copy rights or social media 
+   <nav>:used for navigational links
+   <main>:used for main/important sections
+38.easily understand that particular element/tag meaning both         developers and browser
+
+39. <section>:used for divide the page group
+    <article>:used for structure the content for EG; News Articles
+    <div>:used for sectionsand styleing
+40. <figure> used for image and <figcaption> used for giv caption to <figure>.
+
+SECTION E:
+
+42. <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+    fieldset {
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    input[type="radio"] {
+      width: auto;
+      margin-right: 5px;
+    }
+    .radio-group label {
+      display: inline;
+      margin-right: 15px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<main>
+  <h1>Registration Form</h1>
+  <form action="/submit" method="post">
+    
+    <fieldset>
+      <legend>Personal Information</legend>
+      
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+      
+      <label for="topic">Favorite Topic:</label>
+      <select id="topic" name="topic">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+      </select>
+
+      <label>Preferred Contact Method:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="contact" value="email" checked> Email</label>
+        <label><input type="radio" name="contact" value="phone"> Phone</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Notes</legend>
+      
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Enter any comments ..."></textarea>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+  </form>
+</main>
+
+</body>
+</html>
+
+
+44. <!DOCTYPE html>
+<html>
+<head>
+  <title>Product Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    th {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <caption>Product Details</caption>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
+    <th>Category</th>
+  </tr>
+  <tr>
+    <td>Pen</td>
+    <td>1</td>
+    <td>Blue ink</td>
+    <td>Stationery</td>
+  </tr>
+  <tr>
+    <td>Notebook</td>
+    <td>3</td>
+    <td>200 pages</td>
+    <td>Stationery</td>
+  </tr>
+  <tr>
+    <td>Mouse</td>
+    <td>15</td>
+    <td>Wireless</td>
+    <td>Electronics</td>
+  </tr>
+  <tr>
+    <td>Mug</td>
+    <td>5</td>
+    <td>Ceramic</td>
+    <td>Kitchen</td>
+  </tr>
+  <tr>
+    <td>Chair</td>
+    <td>30</td>
+    <td>Plastic</td>
+    <td>Furniture</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+41. <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Simple Website</title>
+  <style>
+    body {
+      font-family: times new roman;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, aside, footer {
+      padding: 15px;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+    }
+    nav a {
+      margin-right: 10px;
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      display: flex;
+    }
+    article {
+      flex: 3;
+      padding-right: 20px;
+    }
+    aside {
+      flex: 1;
+      background-color: #f2f2f2;
+    }
+    footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Simple Website</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <h2>Welcome to My Website</h2>
+    <p>This is a sample article to demonstrate semantic HTML layout. Semantic tags help make web pages more readable looking good.</p>
+  </article>
+
+  <aside>
+    <h3>Related Info</h3>
+    <ul>
+      <li><a href="#">HTML Basics</a></li>
+      <li><a href="#">CSS Styling</a></li>
+      <li><a href="#">Semantic Elements</a></li>
+    </ul>
+  </aside>
+</main>
+
+<footer>
+  <p>Contact us at: karishma@gmail.com</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
